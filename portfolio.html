@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moses Musau's personal portfolio showcasing programming skills in C and Python, education, and tech interests.">
+    <meta name="keywords" content="Moses Musau, portfolio, programming, C, Python, education, tech, graphics design">
+    <meta name="author" content="Moses Musau">
+    <title>Moses Musau | Personal Portfolio</title>
+    <style>
+        /* CSS Reset and General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url('mysqlanswer/pexels-markus-winkler-1430818-18512882.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        /* Overlay for readability */
+        .overlay {
+            background: rgba(255, 255, 255, 0.85); /* Semi-transparent white for text contrast */
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #1a2639; /* Dark navy */
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            animation: fadeIn 3s ease-in;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #3e4c66; /* Slightly lighter navy */
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700; /* Gold hover effect */
+            transform: scale(1.1);
+        }
+
+        /* Main Content Styles */
+        main {
+            margin: 2rem 0;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            border-radius: 8px;
+            animation: slideIn 1s ease-out;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #1a2639;
+        }
+
+        section p, section ul {
+            margin-bottom: 1rem;
+        }
+
+        section ul {
+            list-style: disc;
+            padding-left: 2rem;
+        }
+
+        /* Contact Form Styles */
+        #contact .overlay {
+            animation: fadeIn 1.5s ease-in 0.3s; /* Delayed fade-in */
+            animation-fill-mode: both;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            max-width: 600px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #1a2639;
+        }
+
+        input, textarea {
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #ffd700;
+            outline: none;
+        }
+
+        button {
+            background-color: #1a2639;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3e4c66;
+            transform: scale(1.05);
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #1a2639;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.2rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            form {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moses Musau</h1>
+        <p>Programmer | Designer | Tech Enthusiast</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#about" aria-current="page">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" aria-labelledby="about-heading" class="overlay">
+            <h2 id="about-heading">About Me</h2>
+            <p>My name is Moses Musau, a born-again Christian currently pursuing a Bachelor's Degree in Education Arts at the University of Nairobi. I am passionate about technology, particularly in programming, graphics, and design. In my free time, I enjoy gaming, exploring new ideas, and trying out innovative projects. My career objectives is To work in an environment with prospects of developing careers and force numerous challenges which I do believe I will elevate my understanding and vise to achieve worthwhile goals based on sound values systems as many companies are installing business solutions due to change of technology. 
+To be a result oriented professional in an organization that thrives on brilliance, innovation, 
+hard work and where an extra ordinary record in performance management and team 
+cohesiveness would be required.</p>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading" class="overlay">
+            <h2 id="skills-heading">Skills</h2>
+            <ul>
+                <li>Programming Languages: C, Python</li>
+                <li>Graphics and Design: Enthusiast in creating visually appealing designs</li>
+                <li>Problem-Solving: Strong analytical skills for tackling tech challenges</li>
+            </ul>
+        </section>
+
+        <section id="education" aria-labelledby="education-heading" class="overlay">
+            <h2 id="education-heading">Education</h2>
+            <p><strong>Bachelor's Degree in Education Arts</strong><br>
+            University of Nairobi, Ongoing<br>
+            Studying to become an educator with a focus on integrating technology into learning.</p>
+            <p><a href="mysqlanswer/moses cv.pdf" download aria-label="Download Moses Musau's CV">Download My CV</a></p>
+        </section>
+
+        <section id="interests" aria-labelledby="interests-heading" class="overlay">
+            <h2 id="interests-heading">Interests</h2>
+            <p>I am excited about the endless possibilities in technology, especially in programming and graphics design. My professional interests include developing user-friendly applications, creating engaging visual content, and exploring innovative tech solutions. I am driven by the desire to blend creativity with functionality to solve real-world problems.</p>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-heading" class="overlay">
+            <h2 id="projects-heading">Projects</h2>
+            <p>Currently working on a house-hunting project in my hometown, aimed at simplifying the process of finding homes through technology. Stay tuned for updates!</p>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading" class="overlay">
+            <h2 id="contact-heading">Contact Me</h2>
+            <p>Email: <a href="mailto:mosemusa589@gmail.com">mosemusa589@gmail.com</a></p>
+            <p>Phone: <a href="tel:+254715277081">+254 715 277 081</a></p>
+            <form action="mailto:mosemusa589@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Moses Musau. All rights reserved.</p>
+    </footer>
+</body>
+</html>
